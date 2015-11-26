@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class ScopeConfiguration {
 
     @Bean
-    public CustomScopeConfigurer customScopeConfigurer() {
+    public static CustomScopeConfigurer customScopeConfigurer() {
         CustomScopeConfigurer csc = new CustomScopeConfigurer();
         csc.addScope("view", new ViewScope());
         return csc;
